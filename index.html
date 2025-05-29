@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📋 My Tasks</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <input type="date" id="due-date" />
+      <input type="text" id="category" placeholder="Category (optional)" />
+      <button id="add-btn">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search tasks..." />
+      <select id="filter-status">
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+        <option value="due">Due Soon</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <footer>
+      <p>Total: <span id="total-count">0</span> | Completed: <span id="completed-count">0</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
